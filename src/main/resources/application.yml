@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/romashka
+    url: jdbc:postgresql://db:5432/romashka2
     username: postgres
     password: 79182872449
 

@@ -25,10 +25,11 @@ public class Product {
 
     @Min(value = 0, message = "Цена товара не может быть отрицательной.")
     private double price;
-
     private boolean inStock;
 
-    // Конструктор с параметрами - для тестов
+    public Product() {}
+
+    // Конструктор с параметрами
     public Product(String name, String description, double price, boolean inStock) {
         this.name = name;
         this.description = description;
@@ -36,11 +37,6 @@ public class Product {
         this.inStock = inStock;
     }
 
-
-    public Product() {
-    }
-
-    // Геттеры и сеттеры
     public Long getId() {
         return id;
     }
